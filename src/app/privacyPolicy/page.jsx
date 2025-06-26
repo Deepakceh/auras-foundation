@@ -1,85 +1,82 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import HeroSection from '../../components/HeroSection'; // Update path if needed
+import HeroSection from '../../components/HeroSection';
 
 const privacySections = [
   {
     title: '1. Information We Collect',
     content:
-      'We collect personal information like name, email, and activity data to improve user experience. This may include analytics, cookies, and voluntary user inputs.',
+      'We may collect personal details such as your name, email address, phone number, or message when you voluntarily contact us, register, or donate. We also gather non-personal data such as browser type or access time for analytics purposes.',
   },
   {
-    title: '2. How We Use Your Information',
+    title: '2. Why We Collect It',
     content:
-      'The data collected helps us personalize lessons, offer better support, and improve features. We do not sell or rent your information.',
+      'Your data helps us improve communication, manage volunteer or donor relationships, and enhance user experience. It also helps us send updates about our projects, events, and impact.',
   },
   {
-    title: '3. Sharing of Information',
+    title: '3. Data Sharing Policy',
     content:
-      'Your information is never shared with third parties without consent, unless required by law or in the event of a legal investigation.',
+      'We respect your privacy. Auras Foundation does not sell or rent your data to third parties. Information may be shared only with trusted partners or required by law, and always with discretion.',
   },
   {
-    title: '4. Data Security',
+    title: '4. Data Protection',
     content:
-      'We use encryption, secure servers, and access controls to protect your personal data from unauthorized access.',
+      'We implement industry-standard security measures — including encrypted storage and restricted access — to protect your personal information from unauthorized access.',
   },
   {
-    title: '5. Your Choices',
+    title: '5. Your Rights',
     content:
-      'You can choose to opt-out of certain communications and data collection tools like cookies. Account deletion requests can be submitted via email.',
+      'You have full control over your information. You can request access, correction, or deletion of your data by reaching out to us at the contact below.',
   },
   {
-    title: '6. Policy Changes',
+    title: '6. Updates to Policy',
     content:
-      'We may update this privacy policy periodically. Updates will be posted on this page with a revised effective date.',
+      'We may occasionally revise this policy. The latest version will always be available here, along with the date of the most recent update.',
   },
   {
     title: '7. Contact Us',
     content: (
       <>
-        For any privacy-related concerns, please email us at  <a
-          href="mailto:thechessclasses@gmail.com"
-          className="text-yellow-500 font-medium underline"
+        For questions or concerns about this privacy policy, please email us at{' '}
+        <a
+          href="mailto:info@aurasfoundation.com"
+          className="text-green-400 underline"
         >
-          thechessclasses@gmail.com
-        </a>.'
+          aurasfoundation@gmail.com
+        </a>.
       </>
-    )
+    ),
   },
 ];
 
 export default function PrivacyPolicyPage() {
   return (
     <>
-      <HeroSection
-        title="Privacy Policy"
-        currentPage="privacy policy"
-      />
+      <HeroSection title="Privacy Policy" currentPage="privacy policy" />
 
-      <div className="bg-black text-white py-16 px-4 md:px-20">
+      <div className="bg-white text-gray-800 py-16 px-4 md:px-20">
         <motion.h1
-          className="text-4xl font-bold text-yellow-400 mb-10 text-center"
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: 'easeOut' }}
+          className="text-4xl font-bold text-center text-green-700 mb-12"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
         >
-          Privacy Policy
+          Our Commitment to Your Privacy
         </motion.h1>
 
-        <div className="grid gap-8 max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto grid gap-10">
           {privacySections.map((section, index) => (
             <motion.div
               key={index}
-              className="bg-gray-900 rounded-2xl p-6 shadow-lg"
-              initial={{ opacity: 0, x: -40 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className="bg-green-50 border border-green-200 rounded-xl p-6 shadow-sm"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              viewport={{ once: true }}
             >
-              <h2 className="text-xl font-semibold text-yellow-300 mb-2">
-                {section.title}
-              </h2>
-              <p className="text-gray-300">{section.content}</p>
+              <h2 className="text-xl font-semibold text-green-700 mb-2">{section.title}</h2>
+              <p className="text-sm leading-relaxed text-gray-700">{section.content}</p>
             </motion.div>
           ))}
         </div>
