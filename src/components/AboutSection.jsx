@@ -110,12 +110,11 @@ export default function AboutSection({ animateOnScroll = true }) {
 
       {/* Right Image Grid */}
       <motion.div {...getMotionProps('right')} className="flex-1 grid grid-cols-3 gap-2">
-        <img src="/assets/images/about/about2.avif" alt="Classroom" className="w-full h-28 md:h-62 object-cover rounded" />
-        <img src="/assets/images/about/about1.svg" alt="Education" className="w-full h-28 md:h-62 object-cover rounded" />
-        <img src="/assets/images/tech.jpg" alt="Digital Learning" className="w-full h-28 md:h-62 object-cover rounded" />
-        <img src="/assets/images/about/about2.avif" alt="Environment" className="w-full h-28 md:h-62 object-cover rounded" />
-        <img src="/assets/images/disabled-help.jpg" alt="Empowerment" className="w-full h-28 md:h-62 object-cover rounded" />
-        <img src="/assets/images/health.jpg" alt="Health" className="w-full h-28 md:h-62 object-cover rounded" />
+        <img src="/assets/images/about/about1.avif" alt="Education" className="w-full h-28 md:h-62 object-cover rounded" />
+        <img src="/assets/images/about/about2.svg" alt="Environment" className="w-full h-28 md:h-62 object-cover rounded" />
+        <img src="/assets/images/about/about3.jpg" alt="Empowerment" className="w-full h-28 md:h-62 object-cover rounded" />
+        <img src="/assets/images/about/about4.jpg" alt="Livehood" className="w-full h-28 md:h-62 object-cover rounded" />
+        <img src="/assets/images/about/about5.jpg" alt="Health" className="w-full h-28 md:h-62 object-cover rounded" />
       </motion.div>
     </section>
   );

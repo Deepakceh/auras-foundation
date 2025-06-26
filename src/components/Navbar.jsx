@@ -41,13 +41,14 @@ export default function Navbar() {
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white text-black shadow-md' : 'bg-transparent text-white'}`}>
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold">
+          <div></div>
+          {/* <Link href="/" className="text-2xl font-bold">
             {scrolled ? (
               <img src="/assets/images/logo-black.png" alt="logo" className="w-40 h-10" />
             ) : (
               <img src="/assets/images/logo-white.png" alt="logo" className="w-40 h-10" />
             )}
-          </Link>
+          </Link> */}
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-6 items-center text-sm">

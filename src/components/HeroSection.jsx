@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 export default function HeroSection({ title, currentPage }) {
-    const bgImage = '/assets/images/heroSection.avif';
+    const bgImage = '/assets/images/heroSection.jpg';
 
     return (
         <div

@@ -67,7 +67,7 @@ function BannerSection() {
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute inset-0 bg-black/40 flex items-center justify-start px-6 md:px-16",
+                            className: "absolute inset-0 bg-black/10 flex items-center justify-start px-6 md:px-16",
                             children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "max-w-xl",
                                 children: [
@@ -466,8 +466,8 @@ function AboutSection({ animateOnScroll = true }) {
                 className: "flex-1 grid grid-cols-3 gap-2",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                        src: "/assets/images/about/about2.avif",
-                        alt: "Classroom",
+                        src: "/assets/images/about/about1.avif",
+                        alt: "Education",
                         className: "w-full h-28 md:h-62 object-cover rounded"
                     }, void 0, false, {
                         fileName: "[project]/src/components/AboutSection.jsx",
@@ -475,8 +475,8 @@ function AboutSection({ animateOnScroll = true }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                        src: "/assets/images/about/about1.svg",
-                        alt: "Education",
+                        src: "/assets/images/about/about2.svg",
+                        alt: "Environment",
                         className: "w-full h-28 md:h-62 object-cover rounded"
                     }, void 0, false, {
                         fileName: "[project]/src/components/AboutSection.jsx",
@@ -484,8 +484,8 @@ function AboutSection({ animateOnScroll = true }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                        src: "/assets/images/tech.jpg",
-                        alt: "Digital Learning",
+                        src: "/assets/images/about/about3.jpg",
+                        alt: "Empowerment",
                         className: "w-full h-28 md:h-62 object-cover rounded"
                     }, void 0, false, {
                         fileName: "[project]/src/components/AboutSection.jsx",
@@ -493,8 +493,8 @@ function AboutSection({ animateOnScroll = true }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                        src: "/assets/images/about/about2.avif",
-                        alt: "Environment",
+                        src: "/assets/images/about/about4.jpg",
+                        alt: "Livehood",
                         className: "w-full h-28 md:h-62 object-cover rounded"
                     }, void 0, false, {
                         fileName: "[project]/src/components/AboutSection.jsx",
@@ -502,21 +502,12 @@ function AboutSection({ animateOnScroll = true }) {
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                        src: "/assets/images/disabled-help.jpg",
-                        alt: "Empowerment",
-                        className: "w-full h-28 md:h-62 object-cover rounded"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/AboutSection.jsx",
-                        lineNumber: 117,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                        src: "/assets/images/health.jpg",
+                        src: "/assets/images/about/about5.jpg",
                         alt: "Health",
                         className: "w-full h-28 md:h-62 object-cover rounded"
                     }, void 0, false, {
                         fileName: "[project]/src/components/AboutSection.jsx",
-                        lineNumber: 118,
+                        lineNumber: 117,
                         columnNumber: 9
                     }, this)
                 ]

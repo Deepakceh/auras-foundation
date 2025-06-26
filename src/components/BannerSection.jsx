@@ -54,7 +54,7 @@ export default function BannerSection() {
               alt={banner.title}
               className="w-full h-full object-cover brightness-[0.6]"
             />
-            <div className="absolute inset-0 bg-black/40 flex items-center justify-start px-6 md:px-16">
+            <div className="absolute inset-0 bg-black/10 flex items-center justify-start px-6 md:px-16">
               <div className="max-w-xl">
                 <h2 className="text-white text-3xl md:text-5xl font-bold mb-4">{banner.title}</h2>
                 <p className="text-white text-base md:text-lg mb-6">{banner.description}</p>
