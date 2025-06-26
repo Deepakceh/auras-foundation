@@ -1,133 +1,126 @@
 'use client';
 
-import { useState } from 'react'; // Add this import
-import HeroSection from '../../components/HeroSection'; // adjust path as per your project
-import { motion } from 'framer-motion'
-import Link from 'next/link'; // Ensure Link import if you are using Next.js
+import { useState } from 'react';
+import { motion } from 'framer-motion';
+import HeroSection from '../../components/HeroSection';
+import Link from 'next/link';
 
 const faqData = [
-    {
-        question: "How can I start my first chess session?",
-        answer: "To start your first session, log in to the platform, select a coach, and book a session through the dashboard. Once confirmed, you’ll be all set to begin your first lesson.",
-    },
-    {
-        question: "How do I improve my chess rating?",
-        answer: "Improving your chess rating involves practicing regularly, solving puzzles, studying strategies, and playing games with various opponents. Our coaches will provide personalized advice based on your performance.",
-    },
-    {
-        question: "What are the different chess levels for learners?",
-        answer: "We offer a variety of chess levels, including beginner, intermediate, and advanced. Each level focuses on different aspects such as openings, middle game tactics, endgames, and overall strategies.",
-    },
-    {
-        question: "Can I play with a coach during a session?",
-        answer: "Yes! During a coaching session, you can play games with your coach, who will analyze your moves, give real-time feedback, and help you improve your gameplay.",
-    },
-    {
-        question: "What are the benefits of participating in online tournaments?",
-        answer: "Tournaments provide you with the opportunity to challenge yourself, improve your skills under pressure, and track your progress over time. It’s a great way to gain experience and exposure to different playing styles.",
-    },
-    {
-        question: "Can I request a specific coach?",
-        answer: "Yes, you can request a specific coach based on their expertise, rating, and teaching style. You can view the list of available coaches on the platform and select one that suits your needs.",
-    },
+  {
+    question: 'How is my donation used?',
+    answer:
+      'Your donation is directly used to support programs like education for underprivileged children, environmental protection, women empowerment, and care for specially-abled individuals. We ensure every rupee is used transparently and responsibly.',
+  },
+  {
+    question: 'Can I volunteer with Auras Foundation?',
+    answer:
+      'Absolutely! We welcome volunteers for teaching, event organization, awareness drives, and field support. You can apply through our contact form.',
+  },
+  {
+    question: 'Is Auras Foundation a registered NGO?',
+    answer:
+      'Yes, Auras Foundation is a government-registered non-profit organization. All activities and finances are tracked and compliant with legal norms.',
+  },
+  {
+    question: 'How can I trust this NGO is genuine?',
+    answer:
+      'In today’s world of rising fake NGOs, we urge you to always verify registration details, past activities, and impact reports. We are happy to provide our credentials and past work data upon request.',
+  },
+  {
+    question: 'What causes does Auras Foundation support?',
+    answer:
+      'We actively work in sectors like education, environmental care, health, women empowerment, digital literacy, and support for specially-abled individuals.',
+  },
+  {
+    question: 'Can I get a donation receipt for tax purposes?',
+    answer:
+      'Yes, we issue donation receipts that can be used for tax exemptions under applicable sections. Reach out after donating for a receipt.',
+  },
 ];
 
-export default function page() {
-    const [activeIndex, setActiveIndex] = useState(null);
+export default function FAQPage() {
+  const [activeIndex, setActiveIndex] = useState(null);
 
-    const handleToggle = (index) => {
-        setActiveIndex(activeIndex === index ? null : index);
-    };
+  const handleToggle = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
 
-    return (
-        <>
-            <HeroSection
-                title="FAQ's"
-                currentPage="faq"
-            />
+  return (
+    <>
+      <HeroSection title="FAQs" currentPage="FAQs" />
+
+      <motion.section
+        className="min-h-screen bg-gradient-to-br from-white to-green-50 text-black px-6 py-14 md:px-20"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6 }}
+      >
+        <motion.h1
+          className="text-4xl font-bold text-green-700 mb-6"
+          initial={{ y: -20, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          Frequently Asked Questions
+        </motion.h1>
+
+        <motion.p
+          className="mb-10 text-base text-gray-700 max-w-2xl"
+          initial={{ y: -10, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ delay: 0.2 }}
+        >
+          Have questions about donations, volunteering, or our work? You're in the right place.
+        </motion.p>
+
+        <div className="space-y-4">
+          {faqData.map((item, index) => (
             <motion.div
-                className="min-h-screen bg-yellow-50 text-black px-6 py-12 md:px-20"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+              key={index}
+              className="bg-white border border-green-100 rounded-xl shadow-sm hover:shadow-md transition"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: index * 0.15, duration: 0.4 }}
             >
-                <motion.h1
-                    className="text-4xl font-bold text-black mb-6"
-                    initial={{ y: -30, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5 }}
-                >
-                    Frequently Asked Questions
-                </motion.h1>
-
-                <motion.div
-                    className="mb-8 text-lg text-gray-700 max-w-2xl"
-                    initial={{ y: -20, opacity: 0 }}
-                    animate={{ y: 0, opacity: 1 }}
-                    transition={{ delay: 0.2, duration: 0.5 }}
-                >
-                    Get quick answers to your questions related to chess lessons, sessions, and more.
-                </motion.div>
-
-                <div className="space-y-4">
-                    {faqData.map((item, index) => (
-                        <motion.div
-                            key={index}
-                            className="rounded-lg border bg-white shadow-md hover:shadow-lg transition-all"
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.2, duration: 0.4 }}
-                        >
-                            <div
-                                className="px-6 py-4 cursor-pointer"
-                                onClick={() => handleToggle(index)}
-                            >
-                                <motion.h3
-                                    className="text-xl font-semibold text-yellow-500"
-                                    whileHover={{ scale: 1.01 }}
-                                >
-                                    {item.question}
-                                </motion.h3>
-                            </div>
-                            {activeIndex === index && (
-                                <div className="px-6 pb-4 text-gray-700">
-                                    {item.answer}
-                                </div>
-                            )}
-                        </motion.div>
-                    ))}
-                </div>
-
-                <motion.div
-                    className="mt-12 p-6 border-l-4 border-yellow-500 bg-white rounded-lg shadow"
-                    initial={{ opacity: 0, y: 30 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0.5, duration: 0.5 }}
-                >
-                    <h2 className="text-xl font-bold mb-2 text-black">Still need help?</h2>
-                    <p className="text-gray-700">
-                        For more inquiries, feel free to reach us at{' '}
-                        <a
-                            href="mailto:thechessclasses@gmail.com"
-                            className="text-yellow-600 font-medium underline"
-                        >
-                            thechessclasses@gmail.com
-                        </a>{' '}
-                        and we’ll assist you shortly.
-                    </p>
-                </motion.div>
-
-                <motion.div
-                    className="mt-8"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ delay: 0.7 }}
-                >
-                    <Link href="/" className="inline-block mt-4 text-sm text-yellow-600 hover:underline">
-                        ← Back to Home
-                    </Link>
-                </motion.div>
+              <div
+                onClick={() => handleToggle(index)}
+                className="cursor-pointer px-6 py-4 flex justify-between items-center"
+              >
+                <h3 className="text-lg font-semibold text-green-600">{item.question}</h3>
+                <span className="text-green-500">{activeIndex === index ? '−' : '+'}</span>
+              </div>
+              {activeIndex === index && (
+                <div className="px-6 pb-4 text-gray-700 text-sm">{item.answer}</div>
+              )}
             </motion.div>
-        </>
-    );
+          ))}
+        </div>
+
+        <motion.div
+          className="mt-12 bg-white border-l-4 border-green-500 rounded-lg shadow-md p-6"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6 }}
+        >
+          <h2 className="text-lg font-bold text-green-800 mb-2">Still need help?</h2>
+          <p className="text-gray-600 text-sm">
+            Email us at{' '}
+            <a
+              href="mailto:info@aurasfoundation.com"
+              className="text-green-600 font-medium underline"
+            >
+              aurasfoundation@gmail.com
+            </a>{' '}
+            and our team will get in touch soon.
+          </p>
+        </motion.div>
+
+        <div className="mt-10 text-sm">
+          <Link href="/" className="text-green-600 hover:underline">
+            ← Back to Home
+          </Link>
+        </div>
+      </motion.section>
+    </>
+  );
 }

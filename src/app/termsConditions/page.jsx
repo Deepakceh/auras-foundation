@@ -1,123 +1,96 @@
-'use client'; // Required for using Framer Motion with App Router
+'use client';
 
 import { motion } from 'framer-motion';
-import HeroSection from '../../components/HeroSection'; // adjust path as per your project
+import HeroSection from '../../components/HeroSection';
 
 const termsData = [
   {
-    title: "1. Acceptance of Terms",
-    content:
-      "By accessing or using our chess platform, you agree to be bound by these terms. If you do not agree, please do not use the site.",
+    title: '1. Acceptance of Terms',
+    content: 'By accessing or using the Auras Foundation website or services, you agree to abide by these terms and conditions. If you do not agree, please discontinue use.',
   },
   {
-    title: "2. User Responsibilities",
-    content:
-      "Users must maintain respectful communication with coaches and fellow learners. Any form of cheating during online tournaments or training is strictly prohibited.",
+    title: '2. Responsible Use',
+    content: 'Users must engage with our content respectfully. Harassment, spam, or misuse of our contact forms or services will result in restricted access.',
   },
   {
-    title: "3. Content Ownership",
-    content:
-      "All lessons, videos, puzzles, and training materials are the intellectual property of our platform and may not be redistributed without permission.",
+    title: '3. Donations & Transparency',
+    content: 'All donations made to Auras Foundation are voluntary and non-refundable. We use contributions transparently for causes like education, environment, healthcare, and empowering the specially-abled.',
   },
   {
-    title: "4. Payment & Refund Policy",
-    content:
-      "Payments for coaching or courses are non-refundable unless stated otherwise. In case of cancellations by our team, you may be eligible for a full or partial refund.",
+    title: '4. Beware of Fake NGOs',
+    content: 'We urge all donors to verify before contributing. In today’s time, fake NGOs exist that misuse public trust. Always confirm the authenticity of any organization — including ours — by reviewing registration details or reaching out directly.',
   },
   {
-    title: "5. Privacy Policy",
-    content:
-      "Your personal data will be handled in accordance with our Privacy Policy, available on a separate page.",
+    title: '5. Intellectual Property',
+    content: 'All content, visuals, and written material on our website are owned by Auras Foundation. Unauthorized use, copying, or reproduction is not allowed without written consent.',
   },
   {
-    title: "6. Account Suspension",
-    content:
-      "We reserve the right to suspend or terminate accounts involved in abusive or suspicious activities without prior notice.",
+    title: '6. Privacy & Data Use',
+    content: 'We are committed to safeguarding your personal data. Please refer to our Privacy Policy for how we collect and use information.',
   },
   {
-    title: "7. Intellectual Property",
-    content:
-      "You agree not to copy, distribute, or create derivative works based on any content found on the platform.",
+    title: '7. Policy Changes',
+    content: 'Auras Foundation reserves the right to update these terms at any time. Any updates will be reflected on this page with the latest revision date.',
   },
   {
-    title: "8. Limitation of Liability",
-    content:
-      "We are not liable for any damages arising from the use or inability to use our platform.",
-  },
-  {
-    title: "9. Changes to Terms",
-    content:
-      "These terms may be updated at any time. Continued use of the platform after changes means you accept the new terms.",
-  },
-  {
-    title: "10. Contact Us",
+    title: '8. Contact Us',
     content: (
       <>
-        For any questions about these terms, please contact us at{" "}
-        <a
-          href="mailto:thechessclasses@gmail.com"
-          className="text-yellow-500 font-medium underline"
-        >
-          thechessclasses@gmail.com
+        For any queries, please email us at{' '}
+        <a href="mailto:info@aurasfoundation.com" className="text-green-700 underline font-medium">
+          aurasfoundation@gmail.com
         </a>.
       </>
     ),
-  }
-  
+  },
 ];
 
-export default function page() {
+export default function TermsPage() {
   return (
     <>
-      <HeroSection
-        title="Terms & Conditions"
-        currentPage="terms & conditions"
-      />
+      <HeroSection title="Terms & Conditions" currentPage="terms & conditions" />
 
-      <motion.div
-        className="bg-white text-black py-12 px-4 md:px-16"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
-        <motion.h1
-          className="text-3xl font-bold text-yellow-500 mb-6"
+      {/* Section with curved gradient */}
+      <div className="relative bg-gradient-to-br from-green-50 to-white pb-24 px-4 md:px-20 pt-12">
+        {/* Decorative curve */}
+        <div className="absolute top-0 left-0 right-0 h-24 bg-white rounded-b-full shadow-md"></div>
+
+        <motion.h2
+          className="text-center text-3xl md:text-4xl font-bold text-green-800 mb-12 z-10 relative"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.5 }}
+          transition={{ duration: 0.6 }}
         >
-          Terms & Conditions
-        </motion.h1>
+          Our Terms & Policies
+        </motion.h2>
 
-        <motion.div
-          className="space-y-6 text-base leading-relaxed"
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: { opacity: 0 },
-            visible: {
-              opacity: 1,
-              transition: {
-                staggerChildren: 0.15,
-              },
-            },
-          }}
-        >
-          {termsData.map((section, index) => (
-            <motion.section
-              key={index}
-              variants={{
-                hidden: { opacity: 0, y: 20 },
-                visible: { opacity: 1, y: 0 },
-              }}
-              transition={{ duration: 0.4 }}
+        {/* Terms Grid */}
+        <div className="max-w-6xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
+          {termsData.map((item, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="bg-white border border-green-100 rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-all duration-300"
             >
-              <h2 className="text-xl font-semibold text-black mb-2">{section.title}</h2>
-              <p className="text-gray-700">{section.content}</p>
-            </motion.section>
+              <h3 className="text-lg font-semibold text-green-700 mb-2">{item.title}</h3>
+              <p className="text-sm text-gray-700 leading-relaxed">{item.content}</p>
+            </motion.div>
           ))}
+        </div>
+
+        {/* Fake NGO Disclaimer Block */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.6 }}
+          className="mt-20 max-w-4xl mx-auto bg-yellow-100 text-yellow-800 text-sm p-6 rounded-xl border-l-4 border-yellow-400"
+        >
+          ⚠️ <strong>Important Notice:</strong> With rising online frauds, we urge all well-wishers to verify the identity of any NGO before donating. Auras Foundation operates with full transparency. Always check the official website and confirm details before contributing to any organization.
         </motion.div>
-      </motion.div>
+      </div>
     </>
   );
 }

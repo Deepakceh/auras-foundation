@@ -4,7 +4,6 @@ import Navbar from "../components/Navbar";
 import Head from 'next/head';
 import { Poppins } from 'next/font/google';
 import { Toaster } from "@/components/ui/sonner";
-import WhatsAppButton from '../components/WhatsAppButton'
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
@@ -13,28 +12,28 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "The Chess Classes",
+  title: "Auras Foundation",
   description:
-    "Join our online chess coaching platform and master the game with expert trainers. Perfect for beginners to advanced players.",
+    "Auras Foundation is a non-profit organization working to uplift underprivileged communities through initiatives in education, environmental sustainability, women empowerment, livelihood support, and healthcare.",
   keywords: [
-    "online chess coaching",
-    "learn chess online",
-    "chess lessons",
-    "chess trainers",
-    "chess classes",
-    "chess practice",
-    "chess tutorial",
-    "chess strategy",
+    "Auras Foundation",
+    "NGO India",
+    "education NGO",
+    "environment NGO",
+    "women empowerment",
+    "livelihood support",
+    "healthcare NGO",
+    "non-profit organization",
   ],
-  authors: [{ name: "Chess Trainer" }],
-  creator: "Chess Trainer",
-  metadataBase: new URL("https://thechessclasses.com"),
+  authors: [{ name: "Auras Foundation" }],
+  creator: "Auras Foundation",
+  metadataBase: new URL("https://aurasfoundation.com"),
   openGraph: {
-    title: "Online Chess Coaching | Learn Chess with Experts",
+    title: "Auras Foundation | Together for a Better Tomorrow",
     description:
-      "Master the game of chess with online coaching from experienced trainers. Start learning today!",
-    url: "https://thechessclasses.com",
-    siteName: "Chess Coaching",
+      "Support Auras Foundation – an NGO committed to education, environment, women empowerment, and health. Join us in creating meaningful change.",
+    url: "https://aurasfoundation.com",
+    siteName: "Auras Foundation",
     locale: "en_US",
     type: "website",
   },
@@ -44,6 +43,7 @@ export const metadata = {
   },
 };
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={poppins.className}>
@@ -51,7 +51,6 @@ export default function RootLayout({ children }) {
       <body className="bg-white text-black antialiased">
         <Navbar />
         <main>{children}</main>
-        <WhatsAppButton />
         <Footer />
         <Toaster position="top-center" richColors />
       </body>

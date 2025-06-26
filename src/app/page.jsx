@@ -1,23 +1,17 @@
 import BannerSection from '../components/BannerSection'
-import StatsSection from '../components/StatsSection'
 import AboutSection from '../components/AboutSection'
-import CourseSection from '../components/CourseSection'
-// import CurriculumSection from '../components/CurriculumSection'
-import WhyChooseSection from '../components/WhyChooseSection'
-import ServiceSection from '../components/ServiceSection'
-import EnrollmentSection from '../components/EnrollmentSection'
+import MissionSection from '../components/MissionSection'
+import DonateSection from '../components/DonateSection'
+// import ServiceSection from '../components/ServiceSection'
 export default function page() {
 
   return (
     <>
       <BannerSection />
-      <StatsSection />
       <AboutSection animateOnScroll={true} />
-      <WhyChooseSection />
-      <ServiceSection />
-      <CourseSection />
-      {/* <CurriculumSection /> */}
-      <EnrollmentSection />
+      <MissionSection/>
+      <DonateSection/>
+      {/* <ServiceSection /> */}
     </>
   )
 }
