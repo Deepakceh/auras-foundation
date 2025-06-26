@@ -11,11 +11,11 @@ import Link from 'next/link';
 export default function BannerSection() {
   const banners = [
     {
-      src: '/assets/images/banners/banner1.avif',
-      title: 'Master the Game of Kings',
-      description: 'Step into a world where strategy meets passion. Learn chess with top mentors at The Chess Classes.',
-      buttonText: 'Contact Us',
-      buttonLink: '/contact',
+      src: '/assets/images/banners/banner1.png',
+      title: '',
+      description: '',
+      // buttonText: 'Contact Us',
+      // buttonLink: '/contact',
     },
     {
       src: '/assets/images/banners/banner2.avif',
@@ -23,22 +23,12 @@ export default function BannerSection() {
       description: 'We believe chess isn’t just a game — it’s a journey of focus, patience, and excellence.',
       // No button for this one
     },
+   
+ 
     {
-      src: '/assets/images/banners/banner3.avif',
-      title: 'What We Offer',
-      description: 'From foundational lessons to advanced coaching, explore our chess training programs crafted for all skill levels.'
-    },
-    {
-      src: '/assets/images/banners/banner4',
-      title: 'Learn Through a Powerful Curriculum',
-      description: 'Our structured curriculum blends theory, practice, and play — designed to bring out the best in every player.',
-      buttonText: 'Request a Demo',
-      buttonLink: '/contact',
-    },
-    {
-      src: '/assets/images/banners/banner5',
-      title: 'The Power of Chess',
-      description: 'Boost memory, improve logic, and develop strategic thinking with the ancient game loved worldwide.',
+      src: '/assets/images/banners/banner6.png',
+      title: '',
+      description: '',
     }
   ];
 

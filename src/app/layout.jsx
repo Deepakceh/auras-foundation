@@ -13,21 +13,14 @@ const poppins = Poppins({
 });
 
 export const metadata = {
-  title: "The Chess Classes",
+  title: "Auras Foundation",
   description:
-    "Join our online chess coaching platform and master the game with expert trainers. Perfect for beginners to advanced players.",
-  keywords: [
-    "online chess coaching",
-    "learn chess online",
-    "chess lessons",
-    "chess trainers",
-    "chess classes",
-    "chess practice",
-    "chess tutorial",
-    "chess strategy",
+"Welcome to the Auras Foundation – a non-profit organization dedicated to driving positive change through initiatives in environment, education, and humanitarian efforts. Join us in building a more sustainable, informed, and compassionate world.",  keywords: [
+    "auras foundation",
+    "education ngo",
   ],
-  authors: [{ name: "Chess Trainer" }],
-  creator: "Chess Trainer",
+  authors: [{ name: "Auras Foundation" }],
+  creator: "Auras Foundation",
   metadataBase: new URL("https://thechessclasses.com"),
   openGraph: {
     title: "Online Chess Coaching | Learn Chess with Experts",

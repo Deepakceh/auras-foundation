@@ -1,8 +1,8 @@
 'use client';
+
 import { motion } from 'framer-motion';
 
 export default function AboutSection({ animateOnScroll = true }) {
-  // Common motion props function
   const getMotionProps = (dir = 'left', delay = 0) => {
     const axis = dir === 'left' ? -30 : dir === 'right' ? 30 : 0;
     const base = {
@@ -12,73 +12,79 @@ export default function AboutSection({ animateOnScroll = true }) {
 
     return animateOnScroll
       ? {
-        ...base,
-        whileInView: { opacity: 1, x: 0 },
-        viewport: { once: true, amount: 0.2 },
-      }
+          ...base,
+          whileInView: { opacity: 1, x: 0 },
+          viewport: { once: true, amount: 0.2 },
+        }
       : {
-        ...base,
-        animate: { opacity: 1, x: 0 },
-      };
+          ...base,
+          animate: { opacity: 1, x: 0 },
+        };
   };
 
   return (
-    <section className="relative bg-gradient-to-br from-white to-gray-100 px-6 py-16 md:px-24 flex flex-col md:flex-row gap-14">
-      {/* Left Side */}
-      <motion.div
-        {...getMotionProps('left')}
-        className="flex-1 space-y-6"
-      >
-        <span className="text-sm font-semibold text-yellow-500 uppercase tracking-wide">Who We Are</span>
-        <h2 className="text-3xl md:text-4xl font-bold leading-snug text-gray-800">
-          Welcome to The Chess Classes, where strategy builds success.
-        </h2>
+    <section className="relative bg-white text-gray-800 px-6 py-16 md:px-24 flex flex-col lg:flex-row gap-12">
+      {/* Left Text Content */}
+      <motion.div {...getMotionProps('left')} className="flex-1 space-y-6">
+        <span className="text-sm font-semibold text-green-600 uppercase tracking-wide">About Us</span>
+        <h2 className="text-4xl font-bold leading-snug">Auras Foundation</h2>
         <p className="text-gray-600 text-base leading-relaxed">
-          We’re an online platform passionate about making chess fun, accessible, and enriching for all skill levels.
-          Whether you're starting out or aiming to master advanced tactics, our personalized coaching helps you level up.
+          Auras Foundation is a non-profit organization dedicated to building a better world. We focus on protecting the
+          environment, providing education to the underprivileged, and supporting specially-abled individuals with care,
+          training, and empowerment.
         </p>
 
+        {/* Features */}
         <div className="space-y-6">
           {/* Feature 1 */}
-          <motion.div
-            {...getMotionProps('bottom', 0.2)}
-            className="flex items-start gap-4"
-          >
-            <div className="text-white bg-gradient-to-tr from-black to-gray-800 p-3 rounded-full shadow-md">
-              <i className="fas fa-chess text-xl"></i>
+          <motion.div {...getMotionProps('bottom', 0.2)} className="flex items-start gap-4">
+            <div className="bg-green-600 text-white p-3 rounded-full shadow-md">
+              <i className="fas fa-tree text-xl"></i>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-800 text-lg">Online Chess Coaching</h4>
-              <p className="text-sm text-gray-600">Live sessions tailored to help you master openings, tactics, and endgames from anywhere.</p>
+              <h4 className="font-semibold text-lg">Environmental Care</h4>
+              <p className="text-sm text-gray-600">
+                We conduct clean-up drives, tree plantations, and awareness events to keep our planet healthy.
+              </p>
             </div>
           </motion.div>
 
           {/* Feature 2 */}
-          <motion.div
-            {...getMotionProps('bottom', 0.4)}
-            className="flex items-start gap-4"
-          >
-            <div className="text-white bg-gradient-to-tr from-black to-gray-800 p-3 rounded-full shadow-md">
-              <i className="fas fa-chess-knight text-xl"></i>
+          <motion.div {...getMotionProps('bottom', 0.3)} className="flex items-start gap-4">
+            <div className="bg-green-600 text-white p-3 rounded-full shadow-md">
+              <i className="fas fa-book-reader text-xl"></i>
             </div>
             <div>
-              <h4 className="font-semibold text-gray-800 text-lg">Practice & Game Analysis</h4>
-              <p className="text-sm text-gray-600">Play games and get detailed feedback to refine your strategy and decision-making.</p>
+              <h4 className="font-semibold text-lg">Education Support</h4>
+              <p className="text-sm text-gray-600">
+                We provide learning materials, classes, and digital education to students in need.
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Feature 3 */}
+          <motion.div {...getMotionProps('bottom', 0.4)} className="flex items-start gap-4">
+            <div className="bg-green-600 text-white p-3 rounded-full shadow-md">
+              <i className="fas fa-hand-holding-heart text-xl"></i>
+            </div>
+            <div>
+              <h4 className="font-semibold text-lg">Specially-Abled Support</h4>
+              <p className="text-sm text-gray-600">
+                We empower differently-abled individuals with training, tools, and inclusive community support.
+              </p>
             </div>
           </motion.div>
         </div>
       </motion.div>
 
-      {/* Right Side: Image */}
-      <motion.div
-        {...getMotionProps('right')}
-        className="flex-1 relative rounded-2xl overflow-hidden shadow-xl"
-      >
-        <img
-          src="/assets/images/about.png"
-          alt="Chess Board"
-          className="object-cover"
-        />
+      {/* Right Image Grid */}
+      <motion.div {...getMotionProps('right')} className="flex-1 grid grid-cols-3 gap-2">
+        <img src="/assets/images/about/about1.svg" alt="Environment" className="w-full h-28 md:h-62 object-cover rounded" />
+        <img src="/assets/images/about/about2.avif" alt="Education" className="w-full h-28 md:h-62 object-cover rounded" />
+        <img src="/assets/images/disabled-help.jpg" alt="Help" className="w-full h-28 md:h-32 object-cover rounded" />
+        <img src="/assets/images/tech.jpg" alt="Digital" className="w-full h-28 md:h-32 object-cover rounded" />
+        <img src="/assets/images/classroom.jpg" alt="Classroom" className="w-full h-28 md:h-32 object-cover rounded" />
+        <img src="/assets/images/hallway.jpg" alt="Facility" className="w-full h-28 md:h-32 object-cover rounded" />
       </motion.div>
     </section>
   );
