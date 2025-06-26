@@ -118,27 +118,27 @@ function Navbar() {
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                    href: "/about",
-                                    className: linkClass('/about'),
-                                    children: "About"
+                                    href: "/services",
+                                    className: linkClass('/services'),
+                                    children: "Services"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.jsx",
                                     lineNumber: 58,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                    href: "/#courses",
-                                    className: linkClass('/#courses'),
-                                    children: "Courses"
+                                    href: "/gallery",
+                                    className: linkClass('/about'),
+                                    children: "Gallery"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.jsx",
                                     lineNumber: 59,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                    href: "/services",
-                                    className: linkClass('/services'),
-                                    children: "Services"
+                                    href: "/about",
+                                    className: linkClass('/about'),
+                                    children: "About"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Navbar.jsx",
                                     lineNumber: 60,
@@ -160,8 +160,8 @@ function Navbar() {
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "https://app7.chesslang.com",
-                            className: `ml-4 px-5 py-2 rounded text-sm font-semibold transition-all duration-300 ${scrolled ? 'bg-gree-500 text-white hover:bg-green-600' : 'bg-white text-black hover:bg-green-600 hover:text-white'}`,
+                            href: "/donate",
+                            className: `ml-4 px-5 py-2 rounded text-sm font-semibold transition-all duration-300 ${scrolled ? 'bg-green-700 text-white hover:bg-green-800' : 'bg-white text-black hover:bg-green-700 hover:text-white'}`,
                             children: "Donate"
                         }, void 0, false, {
                             fileName: "[project]/src/components/Navbar.jsx",

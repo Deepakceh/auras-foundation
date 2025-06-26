@@ -55,19 +55,19 @@ export default function Navbar() {
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-6 items-center text-sm">
             <Link href="/" className={linkClass('/')}>Home</Link>
-            <Link href="/about" className={linkClass('/about')}>About</Link>
-            <Link href="/#courses" className={linkClass('/#courses')}>Courses</Link>
             <Link href="/services" className={linkClass('/services')}>Services</Link>
+            <Link href="/gallery" className={linkClass('/about')}>Gallery</Link>
+            <Link href="/about" className={linkClass('/about')}>About</Link>
             <Link href="/contact" className={linkClass('/contact')}>Contact</Link>
           </div>
 
           {/* Join Button - Styled like “Donate” */}
           <a
-            href="https://app7.chesslang.com"
+            href="/donate"
             className={`ml-4 px-5 py-2 rounded text-sm font-semibold transition-all duration-300 ${
               scrolled
-                ? 'bg-gree-500 text-white hover:bg-green-600'
-                : 'bg-white text-black hover:bg-green-600 hover:text-white'
+                ? 'bg-green-700 text-white hover:bg-green-800'
+                : 'bg-white text-black hover:bg-green-700 hover:text-white'
             }`}
           >
             Donate
