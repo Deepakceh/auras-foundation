@@ -1,15 +1,17 @@
 import BannerSection from '../components/BannerSection'
 import AboutSection from '../components/AboutSection'
-import ServiceSection from '../components/ServiceSection'
-import EnrollmentSection from '../components/EnrollmentSection'
+import MissionSection from '../components/MissionSection'
+import DonateSection from '../components/DonateSection'
+// import ServiceSection from '../components/ServiceSection'
 export default function page() {
 
   return (
     <>
       <BannerSection />
       <AboutSection animateOnScroll={true} />
-      <ServiceSection />
-      <EnrollmentSection />
+      <MissionSection/>
+      <DonateSection/>
+      {/* <ServiceSection /> */}
     </>
   )
 }

@@ -31,13 +31,10 @@ export default function Navbar() {
   const linkClass = (path) =>
     `relative transition-colors duration-300 font-medium px-2 py-1 ${
       isActive(path)
-        ? 'text-green-500 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-green-500'
-        : 'hover:text-green-400 text-inherit'
+        ? 'text-green-500 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-green-700'
+        : 'hover:text-green-700 text-inherit'
     }`;
 
-  const whatsappNumber = '919999146263';
-  const message = "Hi! I'm interested in taking a demo chess class. Could you please share the details?";
-  const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <>
