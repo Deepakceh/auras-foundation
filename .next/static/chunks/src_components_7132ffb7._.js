@@ -1,138 +1,205 @@
 (globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([typeof document === "object" ? document.currentScript : undefined, {
 
-"[project]/src/components/BannerSection.jsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"[project]/src/components/MissionSection.jsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>BannerSection)
+    "default": (()=>MissionSection)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/swiper/swiper-react.mjs [app-client] (ecmascript)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$modules$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$module__evaluation$3e$__ = __turbopack_context__.i("[project]/node_modules/swiper/modules/index.mjs [app-client] (ecmascript) <module evaluation>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$modules$2f$autoplay$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Autoplay$3e$__ = __turbopack_context__.i("[project]/node_modules/swiper/modules/autoplay.mjs [app-client] (ecmascript) <export default as Autoplay>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 'use client';
 ;
 ;
-;
-;
-;
-;
-;
-function BannerSection() {
-    const banners = [
-        {
-            src: '/assets/images/banners/banner1.png',
-            title: '',
-            description: ''
-        },
-        {
-            src: '/assets/images/banners/banner2.avif',
-            title: 'Our Story & Mission',
-            description: 'We believe chess isn’t just a game — it’s a journey of focus, patience, and excellence.'
-        },
-        {
-            src: '/assets/images/banners/banner6.png',
-            title: '',
-            description: ''
-        }
-    ];
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Swiper"], {
-        modules: [
-            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$modules$2f$autoplay$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Autoplay$3e$__["Autoplay"]
-        ],
-        spaceBetween: 30,
-        slidesPerView: 1,
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true
-        },
-        loop: true,
-        speed: 1000,
-        className: "w-full",
-        children: banners.map((banner, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SwiperSlide"], {
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "relative w-full h-[500px] md:h-[550px]",
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                            src: banner.src,
-                            alt: banner.title,
-                            className: "w-full h-full object-cover brightness-[0.6]"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/BannerSection.jsx",
-                            lineNumber: 52,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "absolute inset-0 bg-black/10 flex items-center justify-start px-6 md:px-16",
-                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "max-w-xl",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-white text-3xl md:text-5xl font-bold mb-4",
-                                        children: banner.title
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/BannerSection.jsx",
-                                        lineNumber: 59,
-                                        columnNumber: 17
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "text-white text-base md:text-lg mb-6",
-                                        children: banner.description
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/BannerSection.jsx",
-                                        lineNumber: 60,
-                                        columnNumber: 17
-                                    }, this),
-                                    banner.buttonText && banner.buttonLink && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                        href: banner.buttonLink,
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            className: "bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-6 rounded-full transition duration-300 cursor-pointer",
-                                            children: banner.buttonText
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/BannerSection.jsx",
-                                            lineNumber: 63,
-                                            columnNumber: 21
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/BannerSection.jsx",
-                                        lineNumber: 62,
-                                        columnNumber: 19
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/BannerSection.jsx",
-                                lineNumber: 58,
-                                columnNumber: 15
+function MissionSection() {
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "bg-gray-50 px-6 py-16 md:px-24 text-gray-800",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                initial: {
+                    opacity: 0,
+                    y: 40
+                },
+                whileInView: {
+                    opacity: 1,
+                    y: 0
+                },
+                transition: {
+                    duration: 0.6
+                },
+                viewport: {
+                    once: true,
+                    amount: 0.2
+                },
+                className: "text-center max-w-4xl mx-auto mb-12",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: "text-4xl font-bold mb-4",
+                        children: "Our Mission"
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/MissionSection.jsx",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-gray-600 text-base leading-relaxed",
+                        children: [
+                            "At ",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
+                                children: "Auras Foundation"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/MissionSection.jsx",
+                                lineNumber: 17,
+                                columnNumber: 14
+                            }, this),
+                            ", our mission is to create lasting impact by uplifting underprivileged communities through education, environmental care, women empowerment, livelihood development, and health awareness. We believe in equality, sustainability, and opportunity for all."
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/MissionSection.jsx",
+                        lineNumber: 16,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/MissionSection.jsx",
+                lineNumber: 8,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "grid md:grid-cols-3 gap-8 max-w-6xl mx-auto",
+                children: missionPoints.map((point, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        initial: {
+                            opacity: 0,
+                            y: 30
+                        },
+                        whileInView: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            duration: 0.5,
+                            delay: idx * 0.2
+                        },
+                        viewport: {
+                            once: true
+                        },
+                        className: "bg-white p-6 rounded-xl shadow hover:shadow-lg transition",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "text-green-600 text-3xl mb-4",
+                                children: point.icon
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/MissionSection.jsx",
+                                lineNumber: 33,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                className: "font-semibold text-xl mb-2",
+                                children: point.title
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/MissionSection.jsx",
+                                lineNumber: 34,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-sm text-gray-600",
+                                children: point.description
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/MissionSection.jsx",
+                                lineNumber: 35,
+                                columnNumber: 13
                             }, this)
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/BannerSection.jsx",
-                            lineNumber: 57,
-                            columnNumber: 13
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/src/components/BannerSection.jsx",
-                    lineNumber: 51,
-                    columnNumber: 11
-                }, this)
-            }, idx, false, {
-                fileName: "[project]/src/components/BannerSection.jsx",
-                lineNumber: 50,
-                columnNumber: 9
-            }, this))
-    }, void 0, false, {
-        fileName: "[project]/src/components/BannerSection.jsx",
-        lineNumber: 36,
+                        ]
+                    }, point.title, true, {
+                        fileName: "[project]/src/components/MissionSection.jsx",
+                        lineNumber: 25,
+                        columnNumber: 11
+                    }, this))
+            }, void 0, false, {
+                fileName: "[project]/src/components/MissionSection.jsx",
+                lineNumber: 23,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/src/components/MissionSection.jsx",
+        lineNumber: 7,
         columnNumber: 5
     }, this);
 }
-_c = BannerSection;
+_c = MissionSection;
+const missionPoints = [
+    {
+        title: 'Education Access',
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+            className: "fas fa-book-reader"
+        }, void 0, false, {
+            fileName: "[project]/src/components/MissionSection.jsx",
+            lineNumber: 46,
+            columnNumber: 11
+        }, this),
+        description: 'Providing quality education and digital learning tools to children and youth who need it most.'
+    },
+    {
+        title: 'Clean & Green Environment',
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+            className: "fas fa-leaf"
+        }, void 0, false, {
+            fileName: "[project]/src/components/MissionSection.jsx",
+            lineNumber: 52,
+            columnNumber: 11
+        }, this),
+        description: 'Promoting sustainable living through tree plantations, clean-up drives, and awareness programs.'
+    },
+    {
+        title: 'Empowering Women',
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+            className: "fas fa-female"
+        }, void 0, false, {
+            fileName: "[project]/src/components/MissionSection.jsx",
+            lineNumber: 58,
+            columnNumber: 11
+        }, this),
+        description: 'Supporting women with skills training, financial literacy, and resources to build independent futures.'
+    },
+    {
+        title: 'Livelihood Support',
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+            className: "fas fa-briefcase"
+        }, void 0, false, {
+            fileName: "[project]/src/components/MissionSection.jsx",
+            lineNumber: 64,
+            columnNumber: 11
+        }, this),
+        description: 'Offering vocational training and job support to help individuals earn and lead stable lives.'
+    },
+    {
+        title: 'Health & Hygiene',
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+            className: "fas fa-heartbeat"
+        }, void 0, false, {
+            fileName: "[project]/src/components/MissionSection.jsx",
+            lineNumber: 70,
+            columnNumber: 11
+        }, this),
+        description: 'Conducting health checkups, hygiene awareness campaigns, and promoting mental well-being.'
+    },
+    {
+        title: 'Inclusive Growth',
+        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
+            className: "fas fa-hand-holding-heart"
+        }, void 0, false, {
+            fileName: "[project]/src/components/MissionSection.jsx",
+            lineNumber: 76,
+            columnNumber: 11
+        }, this),
+        description: 'Ensuring that differently-abled individuals receive equal care, training, and community support.'
+    }
+];
 var _c;
-__turbopack_context__.k.register(_c, "BannerSection");
+__turbopack_context__.k.register(_c, "MissionSection");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
@@ -536,206 +603,116 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
 }}),
-"[project]/src/components/MissionSection.jsx [app-client] (ecmascript)": ((__turbopack_context__) => {
+"[project]/src/components/HeroSection.jsx [app-client] (ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
 var { g: global, __dirname, k: __turbopack_refresh__, m: module } = __turbopack_context__;
 {
 __turbopack_context__.s({
-    "default": (()=>MissionSection)
+    "default": (()=>HeroSection)
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/client/app-dir/link.js [app-client] (ecmascript)");
 'use client';
 ;
 ;
-function MissionSection() {
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
-        className: "bg-gray-50 px-6 py-16 md:px-24 text-gray-800",
+;
+;
+function HeroSection({ title, currentPage }) {
+    const bgImage = '/assets/images/heroSection.jpg';
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "relative w-full h-[200px] sm:h-[250px] md:h-[300px] lg:h-[320px] bg-center bg-cover flex items-center justify-center",
+        style: {
+            backgroundImage: `url(${bgImage})`
+        },
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                initial: {
-                    opacity: 0,
-                    y: 40
-                },
-                whileInView: {
-                    opacity: 1,
-                    y: 0
-                },
-                transition: {
-                    duration: 0.6
-                },
-                viewport: {
-                    once: true,
-                    amount: 0.2
-                },
-                className: "text-center max-w-4xl mx-auto mb-12",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                        className: "text-4xl font-bold mb-4",
-                        children: "Our Mission"
-                    }, void 0, false, {
-                        fileName: "[project]/src/components/MissionSection.jsx",
-                        lineNumber: 15,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                        className: "text-gray-600 text-base leading-relaxed",
-                        children: [
-                            "At ",
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                children: "Auras Foundation"
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/MissionSection.jsx",
-                                lineNumber: 17,
-                                columnNumber: 14
-                            }, this),
-                            ", our mission is to create lasting impact by uplifting underprivileged communities through education, environmental care, women empowerment, livelihood development, and health awareness. We believe in equality, sustainability, and opportunity for all."
-                        ]
-                    }, void 0, true, {
-                        fileName: "[project]/src/components/MissionSection.jsx",
-                        lineNumber: 16,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
-                fileName: "[project]/src/components/MissionSection.jsx",
-                lineNumber: 8,
-                columnNumber: 7
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 bg-black/60 z-0"
+            }, void 0, false, {
+                fileName: "[project]/src/components/HeroSection.jsx",
+                lineNumber: 18,
+                columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "grid md:grid-cols-3 gap-8 max-w-6xl mx-auto",
-                children: missionPoints.map((point, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                className: "relative z-10 text-center text-white px-4",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].h1, {
                         initial: {
                             opacity: 0,
-                            y: 30
+                            y: -20
                         },
-                        whileInView: {
+                        animate: {
                             opacity: 1,
                             y: 0
                         },
                         transition: {
-                            duration: 0.5,
-                            delay: idx * 0.2
+                            duration: 0.6
                         },
-                        viewport: {
-                            once: true
+                        className: "text-3xl sm:text-4xl md:text-5xl font-bold",
+                        children: title
+                    }, void 0, false, {
+                        fileName: "[project]/src/components/HeroSection.jsx",
+                        lineNumber: 22,
+                        columnNumber: 17
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].p, {
+                        initial: {
+                            opacity: 0,
+                            y: 10
                         },
-                        className: "bg-white p-6 rounded-xl shadow hover:shadow-lg transition",
+                        animate: {
+                            opacity: 1,
+                            y: 0
+                        },
+                        transition: {
+                            duration: 0.6,
+                            delay: 0.2
+                        },
+                        className: "mt-2 text-sm md:text-base text-gray-200",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                className: "text-green-600 text-3xl mb-4",
-                                children: point.icon
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                href: "/",
+                                className: "hover:underline text-yellow-300",
+                                children: "Home"
                             }, void 0, false, {
-                                fileName: "[project]/src/components/MissionSection.jsx",
-                                lineNumber: 33,
-                                columnNumber: 13
+                                fileName: "[project]/src/components/HeroSection.jsx",
+                                lineNumber: 37,
+                                columnNumber: 21
                             }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
-                                className: "font-semibold text-xl mb-2",
-                                children: point.title
+                            ' ',
+                            "> ",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "capitalize",
+                                children: currentPage
                             }, void 0, false, {
-                                fileName: "[project]/src/components/MissionSection.jsx",
-                                lineNumber: 34,
-                                columnNumber: 13
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                className: "text-sm text-gray-600",
-                                children: point.description
-                            }, void 0, false, {
-                                fileName: "[project]/src/components/MissionSection.jsx",
-                                lineNumber: 35,
-                                columnNumber: 13
+                                fileName: "[project]/src/components/HeroSection.jsx",
+                                lineNumber: 40,
+                                columnNumber: 26
                             }, this)
                         ]
-                    }, point.title, true, {
-                        fileName: "[project]/src/components/MissionSection.jsx",
-                        lineNumber: 25,
-                        columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "[project]/src/components/MissionSection.jsx",
-                lineNumber: 23,
-                columnNumber: 7
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/HeroSection.jsx",
+                        lineNumber: 31,
+                        columnNumber: 17
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/components/HeroSection.jsx",
+                lineNumber: 21,
+                columnNumber: 13
             }, this)
         ]
     }, void 0, true, {
-        fileName: "[project]/src/components/MissionSection.jsx",
-        lineNumber: 7,
-        columnNumber: 5
+        fileName: "[project]/src/components/HeroSection.jsx",
+        lineNumber: 11,
+        columnNumber: 9
     }, this);
 }
-_c = MissionSection;
-const missionPoints = [
-    {
-        title: 'Education Access',
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-            className: "fas fa-book-reader"
-        }, void 0, false, {
-            fileName: "[project]/src/components/MissionSection.jsx",
-            lineNumber: 46,
-            columnNumber: 11
-        }, this),
-        description: 'Providing quality education and digital learning tools to children and youth who need it most.'
-    },
-    {
-        title: 'Clean & Green Environment',
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-            className: "fas fa-leaf"
-        }, void 0, false, {
-            fileName: "[project]/src/components/MissionSection.jsx",
-            lineNumber: 52,
-            columnNumber: 11
-        }, this),
-        description: 'Promoting sustainable living through tree plantations, clean-up drives, and awareness programs.'
-    },
-    {
-        title: 'Empowering Women',
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-            className: "fas fa-female"
-        }, void 0, false, {
-            fileName: "[project]/src/components/MissionSection.jsx",
-            lineNumber: 58,
-            columnNumber: 11
-        }, this),
-        description: 'Supporting women with skills training, financial literacy, and resources to build independent futures.'
-    },
-    {
-        title: 'Livelihood Support',
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-            className: "fas fa-briefcase"
-        }, void 0, false, {
-            fileName: "[project]/src/components/MissionSection.jsx",
-            lineNumber: 64,
-            columnNumber: 11
-        }, this),
-        description: 'Offering vocational training and job support to help individuals earn and lead stable lives.'
-    },
-    {
-        title: 'Health & Hygiene',
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-            className: "fas fa-heartbeat"
-        }, void 0, false, {
-            fileName: "[project]/src/components/MissionSection.jsx",
-            lineNumber: 70,
-            columnNumber: 11
-        }, this),
-        description: 'Conducting health checkups, hygiene awareness campaigns, and promoting mental well-being.'
-    },
-    {
-        title: 'Inclusive Growth',
-        icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
-            className: "fas fa-hand-holding-heart"
-        }, void 0, false, {
-            fileName: "[project]/src/components/MissionSection.jsx",
-            lineNumber: 76,
-            columnNumber: 11
-        }, this),
-        description: 'Ensuring that differently-abled individuals receive equal care, training, and community support.'
-    }
-];
+_c = HeroSection;
 var _c;
-__turbopack_context__.k.register(_c, "MissionSection");
+__turbopack_context__.k.register(_c, "HeroSection");
 if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
     __turbopack_context__.k.registerExports(module, globalThis.$RefreshHelpers$);
 }
@@ -987,4 +964,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }}),
 }]);
 
-//# sourceMappingURL=src_components_f40c96b0._.js.map
+//# sourceMappingURL=src_components_7132ffb7._.js.map
