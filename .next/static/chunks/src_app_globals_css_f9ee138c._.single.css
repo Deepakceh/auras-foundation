@@ -773,6 +773,14 @@
     height: calc(var(--spacing) * 12);
   }
 
+  .h-15 {
+    height: calc(var(--spacing) * 15);
+  }
+
+  .h-20 {
+    height: calc(var(--spacing) * 20);
+  }
+
   .h-24 {
     height: calc(var(--spacing) * 24);
   }
@@ -1502,6 +1510,10 @@
 
   .p-10 {
     padding: calc(var(--spacing) * 10);
+  }
+
+  .px-0 {
+    padding-inline: calc(var(--spacing) * 0);
   }
 
   .px-2 {
@@ -2355,6 +2367,18 @@
   @media (hover: hover) {
     .hover\:text-accent-foreground:hover {
       color: var(--accent-foreground);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-gray-50:hover {
+      color: var(--color-gray-50);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-gray-500:hover {
+      color: var(--color-gray-500);
     }
   }
 

@@ -37,17 +37,16 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white text-black shadow-md' : 'bg-black/20 text-white'}`}>
+      <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white text-black shadow-md' : 'bg-black/10 text-white'}`}>
         <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
           {/* Logo */}
           <div></div>
           <Link href="/" className="text-2xl font-bold">
-            <img src="/assets/images/logo.png" alt="logo" className="h-10" />
-
+            <img src="/assets/images/logo.png" alt="logo" className="h-12" />
             {/* {scrolled ? (
-              <img src="/assets/images/logo-black.png" alt="logo" className="w-40 h-10" />
+              <img src="/assets/images/logo-white.png" alt="logo" className="h-15" />
             ) : (
-              <img src="/assets/images/logo-white.png" alt="logo" className="w-40 h-10" />
+              <img src="/assets/images/logo-white.png" alt="logo" className="h-15" />
             )} */}
           </Link>
 
