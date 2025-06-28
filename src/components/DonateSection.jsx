@@ -38,19 +38,16 @@ export default function DonateSection() {
             <strong>Account Name:</strong> Auras Foundation
           </li>
           <li>
-            <strong>Account Number:</strong> 123456789012
+            <strong>Account Number:</strong> 714110210000005
           </li>
           <li>
-            <strong>Bank Name:</strong> State Bank of India (SBI)
+            <strong>Bank Name:</strong> Bank of India (BOI)
           </li>
           <li>
-            <strong>Branch:</strong> New Delhi Main Branch
+            <strong>IFSC Code:</strong> BKID0007141
           </li>
           <li>
-            <strong>IFSC Code:</strong> SBIN0001234
-          </li>
-          <li>
-            <strong>UPI ID:</strong> aurasfoundation@upi
+            <strong>UPI ID:</strong> 9718071000@ybl
           </li>
         </ul>
       </motion.div>

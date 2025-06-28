@@ -20,11 +20,14 @@ export default function BannerSection() {
     {
       src: '/assets/images/banners/banner2.avif',
       title: 'Our Story & Mission',
-      description: 'We believe chess isn’t just a game — it’s a journey of focus, patience, and excellence.',
+      description: 'Empowering communities through education, environment, and equality — Auras Foundation is dedicated to building a sustainable and inclusive future for all.',
       // No button for this one
     },
-   
- 
+    {
+      src: '/assets/images/banners/banner3.png',
+      title: '',
+      description: '',
+    },
     {
       src: '/assets/images/banners/banner6.png',
       title: '',
@@ -48,11 +51,11 @@ export default function BannerSection() {
     >
       {banners.map((banner, idx) => (
         <SwiperSlide key={idx}>
-          <div className="relative w-full h-[500px] md:h-[550px]">
+          <div className="relative w-full h-[230px] sm:h-[400px] md:h-[450px] lg:h-[550px]">
             <img
               src={banner.src}
               alt={banner.title}
-              className="w-full h-full object-cover brightness-[0.6]"
+              className="w-full h-full object-cover"
             />
             <div className="absolute inset-0 bg-black/10 flex items-center justify-start px-6 md:px-16">
               <div className="max-w-xl">

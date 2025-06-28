@@ -38,7 +38,7 @@ export default function AboutSection({ animateOnScroll = true }) {
         <div className="space-y-6">
           {/* Education */}
           <motion.div {...getMotionProps('bottom', 0.2)} className="flex items-start gap-4">
-            <div className="bg-green-600 text-white p-3 rounded-full shadow-md">
+            <div className="bg-green-700 text-white p-3 rounded-full shadow-md">
               <i className="fas fa-book-reader text-xl"></i>
             </div>
             <div>
@@ -52,7 +52,7 @@ export default function AboutSection({ animateOnScroll = true }) {
 
           {/* Environment */}
           <motion.div {...getMotionProps('bottom', 0.3)} className="flex items-start gap-4">
-            <div className="bg-green-600 text-white p-3 rounded-full shadow-md">
+            <div className="bg-green-700 text-white p-3 rounded-full shadow-md">
               <i className="fas fa-leaf text-xl"></i>
             </div>
             <div>
@@ -66,7 +66,7 @@ export default function AboutSection({ animateOnScroll = true }) {
 
           {/* Women Empowerment */}
           <motion.div {...getMotionProps('bottom', 0.4)} className="flex items-start gap-4">
-            <div className="bg-green-600 text-white p-3 rounded-full shadow-md">
+            <div className="bg-green-700 text-white p-3 rounded-full shadow-md">
               <i className="fas fa-female text-xl"></i>
             </div>
             <div>
@@ -80,7 +80,7 @@ export default function AboutSection({ animateOnScroll = true }) {
 
           {/* Livelihood */}
           <motion.div {...getMotionProps('bottom', 0.5)} className="flex items-start gap-4">
-            <div className="bg-green-600 text-white p-3 rounded-full shadow-md">
+            <div className="bg-green-700 text-white p-3 rounded-full shadow-md">
               <i className="fas fa-briefcase text-xl"></i>
             </div>
             <div>
@@ -94,7 +94,7 @@ export default function AboutSection({ animateOnScroll = true }) {
 
           {/* Health */}
           <motion.div {...getMotionProps('bottom', 0.6)} className="flex items-start gap-4">
-            <div className="bg-green-600 text-white p-3 rounded-full shadow-md">
+            <div className="bg-green-700 text-white p-3 rounded-full shadow-md">
               <i className="fas fa-heartbeat text-xl"></i>
             </div>
             <div>

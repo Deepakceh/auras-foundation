@@ -55,7 +55,7 @@ export default function Footer() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4h16v16H4z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M22 6 12 13 2 6" />
               </svg>
-              <span className="text-sm">info@aurasfoundation.com</span>
+              <span className="text-sm">aurasfoundation@gmail.com</span>
             </a>
 
             {/* Address */}
@@ -70,9 +70,9 @@ export default function Footer() {
           <h3 className="text-white font-semibold mb-3">Quick Links</h3>
           <ul className="space-y-2 text-sm">
             <li><a href="/" className="hover:text-yellow-500">Home</a></li>
-            <li><a href="/services" className="hover:text-yellow-500">Services</a></li>
+            <li><a href="/#services" className="hover:text-yellow-500">Services</a></li>
             <li><a href="/about" className="hover:text-yellow-500">About Us</a></li>
-            <li><a href="/mission" className="hover:text-yellow-500">Our Mission</a></li>
+            <li><a href="/#mission" className="hover:text-yellow-500">Our Mission</a></li>
             <li><a href="/donate" className="hover:text-yellow-500">Donate</a></li>
             <li><a href="/contact" className="hover:text-yellow-500">Contact</a></li>
           </ul>
