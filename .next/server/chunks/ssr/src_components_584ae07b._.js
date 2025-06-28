@@ -848,7 +848,7 @@ function DonateSection() {
                                         lineNumber: 41,
                                         columnNumber: 13
                                     }, this),
-                                    " 123456789012"
+                                    " 714110210000005"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/DonateSection.jsx",
@@ -864,7 +864,7 @@ function DonateSection() {
                                         lineNumber: 44,
                                         columnNumber: 13
                                     }, this),
-                                    " State Bank of India (SBI)"
+                                    " Bank of India (BOI)"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/DonateSection.jsx",
@@ -874,13 +874,13 @@ function DonateSection() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: "Branch:"
+                                        children: "IFSC Code:"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/DonateSection.jsx",
                                         lineNumber: 47,
                                         columnNumber: 13
                                     }, this),
-                                    " New Delhi Main Branch"
+                                    " BKID0007141"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/DonateSection.jsx",
@@ -890,33 +890,17 @@ function DonateSection() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: "IFSC Code:"
+                                        children: "UPI ID:"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/DonateSection.jsx",
                                         lineNumber: 50,
                                         columnNumber: 13
                                     }, this),
-                                    " SBIN0001234"
+                                    " 9718071000@ybl"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/DonateSection.jsx",
                                 lineNumber: 49,
-                                columnNumber: 11
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: "UPI ID:"
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/DonateSection.jsx",
-                                        lineNumber: 53,
-                                        columnNumber: 13
-                                    }, this),
-                                    " aurasfoundation@upi"
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/src/components/DonateSection.jsx",
-                                lineNumber: 52,
                                 columnNumber: 11
                             }, this)
                         ]
@@ -951,7 +935,7 @@ function DonateSection() {
                 children: "🙏 Thank you for supporting a cause that truly matters. Your kindness makes a difference."
             }, void 0, false, {
                 fileName: "[project]/src/components/DonateSection.jsx",
-                lineNumber: 59,
+                lineNumber: 56,
                 columnNumber: 7
             }, this)
         ]
