@@ -2401,6 +2401,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:text-green-800:hover {
+      color: var(--color-green-800);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:text-white:hover {
       color: var(--color-white);
     }
