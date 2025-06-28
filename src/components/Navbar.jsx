@@ -29,10 +29,9 @@ export default function Navbar() {
   const isActive = (path) => pathname === path;
 
   const linkClass = (path) =>
-    `relative transition-colors duration-300 font-medium px-2 py-1 ${
-      isActive(path)
-        ? 'text-green-700 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-green-700'
-        : 'hover:text-green-700 text-inherit'
+    `relative transition-colors duration-300 font-medium px-2 py-1 ${isActive(path)
+      ? 'text-green-700 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-green-700'
+      : 'hover:text-green-700 text-inherit'
     }`;
 
 
@@ -62,11 +61,10 @@ export default function Navbar() {
           {/* Join Button - Styled like “Donate” */}
           <a
             href="/donate"
-            className={`ml-4 px-5 py-2 rounded text-sm font-semibold transition-all duration-300 ${
-              scrolled
+            className={`ml-4 px-5 py-2 rounded text-sm font-semibold transition-all duration-300  hidden sm:inline-block ${scrolled
                 ? 'bg-green-700 text-white hover:bg-green-800'
                 : 'bg-white text-black hover:bg-green-700 hover:text-white'
-            }`}
+              }`}
           >
             Donate
           </a>

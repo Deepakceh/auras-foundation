@@ -4,6 +4,9 @@ import Navbar from "../components/Navbar";
 import Head from 'next/head';
 import { Poppins } from 'next/font/google';
 import { Toaster } from "@/components/ui/sonner";
+import Link from "next/link";
+import { HandCoins  } from 'lucide-react';
+
 const poppins = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
@@ -51,6 +54,13 @@ export default function RootLayout({ children }) {
       <body className="bg-white text-black antialiased">
         <Navbar />
         <main>{children}</main>
+        <Link
+          href='/donate'
+          rel="noopener noreferrer"
+          className="fixed bottom-5 right-5 z-50 bg-green-700 hover:bg-green-800 text-white p-3 rounded-full shadow-lg transition-all  block md:hidden"
+        >
+          <HandCoins  className="w-6 h-6" />
+        </Link>
         <Footer />
         <Toaster position="top-center" richColors />
       </body>

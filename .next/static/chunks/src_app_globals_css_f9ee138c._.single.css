@@ -840,6 +840,10 @@
     width: calc(var(--spacing) * 6);
   }
 
+  .w-8 {
+    width: calc(var(--spacing) * 8);
+  }
+
   .w-10 {
     width: calc(var(--spacing) * 10);
   }
@@ -2562,6 +2566,12 @@
   }
 
   @media (width >= 40rem) {
+    .sm\:inline-block {
+      display: inline-block;
+    }
+  }
+
+  @media (width >= 40rem) {
     .sm\:h-\[250px\] {
       height: 250px;
     }
@@ -2657,6 +2667,12 @@
   @media (width >= 48rem) {
     .md\:hidden {
       display: none;
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:inline-block {
+      display: inline-block;
     }
   }
 
