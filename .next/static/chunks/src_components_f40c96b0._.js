@@ -31,7 +31,12 @@ function BannerSection() {
         {
             src: '/assets/images/banners/banner2.avif',
             title: 'Our Story & Mission',
-            description: 'We believe chess isn’t just a game — it’s a journey of focus, patience, and excellence.'
+            description: 'Empowering communities through education, environment, and equality — Auras Foundation is dedicated to building a sustainable and inclusive future for all.'
+        },
+        {
+            src: '/assets/images/banners/banner3.png',
+            title: '',
+            description: ''
         },
         {
             src: '/assets/images/banners/banner6.png',
@@ -55,15 +60,15 @@ function BannerSection() {
         className: "w-full",
         children: banners.map((banner, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swiper$2f$swiper$2d$react$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SwiperSlide"], {
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: "relative w-full h-[500px] md:h-[550px]",
+                    className: "relative w-full h-[230px] sm:h-[400px] md:h-[450px] lg:h-[550px]",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
                             src: banner.src,
                             alt: banner.title,
-                            className: "w-full h-full object-cover brightness-[0.6]"
+                            className: "w-full h-full object-cover"
                         }, void 0, false, {
                             fileName: "[project]/src/components/BannerSection.jsx",
-                            lineNumber: 52,
+                            lineNumber: 55,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -76,7 +81,7 @@ function BannerSection() {
                                         children: banner.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/BannerSection.jsx",
-                                        lineNumber: 59,
+                                        lineNumber: 62,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -84,7 +89,7 @@ function BannerSection() {
                                         children: banner.description
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/BannerSection.jsx",
-                                        lineNumber: 60,
+                                        lineNumber: 63,
                                         columnNumber: 17
                                     }, this),
                                     banner.buttonText && banner.buttonLink && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -94,39 +99,39 @@ function BannerSection() {
                                             children: banner.buttonText
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/BannerSection.jsx",
-                                            lineNumber: 63,
+                                            lineNumber: 66,
                                             columnNumber: 21
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/BannerSection.jsx",
-                                        lineNumber: 62,
+                                        lineNumber: 65,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/BannerSection.jsx",
-                                lineNumber: 58,
+                                lineNumber: 61,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/BannerSection.jsx",
-                            lineNumber: 57,
+                            lineNumber: 60,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/components/BannerSection.jsx",
-                    lineNumber: 51,
+                    lineNumber: 54,
                     columnNumber: 11
                 }, this)
             }, idx, false, {
                 fileName: "[project]/src/components/BannerSection.jsx",
-                lineNumber: 50,
+                lineNumber: 53,
                 columnNumber: 9
             }, this))
     }, void 0, false, {
         fileName: "[project]/src/components/BannerSection.jsx",
-        lineNumber: 36,
+        lineNumber: 39,
         columnNumber: 5
     }, this);
 }
@@ -220,7 +225,7 @@ function AboutSection({ animateOnScroll = true }) {
                                 className: "flex items-start gap-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "bg-green-600 text-white p-3 rounded-full shadow-md",
+                                        className: "bg-green-700 text-white p-3 rounded-full shadow-md",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                             className: "fas fa-book-reader text-xl"
                                         }, void 0, false, {
@@ -268,7 +273,7 @@ function AboutSection({ animateOnScroll = true }) {
                                 className: "flex items-start gap-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "bg-green-600 text-white p-3 rounded-full shadow-md",
+                                        className: "bg-green-700 text-white p-3 rounded-full shadow-md",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                             className: "fas fa-leaf text-xl"
                                         }, void 0, false, {
@@ -316,7 +321,7 @@ function AboutSection({ animateOnScroll = true }) {
                                 className: "flex items-start gap-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "bg-green-600 text-white p-3 rounded-full shadow-md",
+                                        className: "bg-green-700 text-white p-3 rounded-full shadow-md",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                             className: "fas fa-female text-xl"
                                         }, void 0, false, {
@@ -364,7 +369,7 @@ function AboutSection({ animateOnScroll = true }) {
                                 className: "flex items-start gap-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "bg-green-600 text-white p-3 rounded-full shadow-md",
+                                        className: "bg-green-700 text-white p-3 rounded-full shadow-md",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                             className: "fas fa-briefcase text-xl"
                                         }, void 0, false, {
@@ -412,7 +417,7 @@ function AboutSection({ animateOnScroll = true }) {
                                 className: "flex items-start gap-4",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "bg-green-600 text-white p-3 rounded-full shadow-md",
+                                        className: "bg-green-700 text-white p-3 rounded-full shadow-md",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("i", {
                                             className: "fas fa-heartbeat text-xl"
                                         }, void 0, false, {

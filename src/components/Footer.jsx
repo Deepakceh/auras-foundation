@@ -55,7 +55,7 @@ export default function Footer() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4h16v16H4z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M22 6 12 13 2 6" />
               </svg>
-              <span className="text-sm">info@aurasfoundation.com</span>
+              <span className="text-sm">aurasfoundation@gmail.com</span>
             </a>
 
             {/* Address */}
