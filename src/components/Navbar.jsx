@@ -41,13 +41,15 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
           {/* Logo */}
           <div></div>
-          {/* <Link href="/" className="text-2xl font-bold">
-            {scrolled ? (
+          <Link href="/" className="text-2xl font-bold">
+            <img src="/assets/images/logo.png" alt="logo" className="h-10" />
+
+            {/* {scrolled ? (
               <img src="/assets/images/logo-black.png" alt="logo" className="w-40 h-10" />
             ) : (
               <img src="/assets/images/logo-white.png" alt="logo" className="w-40 h-10" />
-            )}
-          </Link> */}
+            )} */}
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-6 items-center text-sm">
@@ -62,8 +64,8 @@ export default function Navbar() {
           <a
             href="/donate"
             className={`ml-4 px-5 py-2 rounded text-sm font-semibold transition-all duration-300  hidden sm:inline-block ${scrolled
-                ? 'bg-green-700 text-white hover:bg-green-800'
-                : 'bg-white text-black hover:bg-green-700 hover:text-white'
+              ? 'bg-green-700 text-white hover:bg-green-800'
+              : 'bg-white text-black hover:bg-green-700 hover:text-white'
               }`}
           >
             Donate

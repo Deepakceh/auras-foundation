@@ -5,9 +5,9 @@ export default function Footer() {
 
         {/* Logo & About */}
         <div>
-          {/* <div className="flex items-center gap-2 mb-3">
-            <img src="/assets/images/logo.png" alt="Auras Foundation logo" className="w-40" />
-          </div> */}
+          <div className="flex items-center gap-2 mb-3">
+            <img src="/assets/images/logo.png" alt="logo" className="" />
+          </div>
           <p className="text-sm">
             Auras Foundation is a non-profit organization working in education, environment, women empowerment, health,
             and support for specially-abled individuals.
