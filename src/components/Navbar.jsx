@@ -29,26 +29,26 @@ export default function Navbar() {
   const isActive = (path) => pathname === path;
 
   const linkClass = (path) =>
-    `relative transition-colors duration-300 font-medium px-2 py-1 ${
-      isActive(path)
-        ? 'text-green-700 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-green-700'
-        : 'hover:text-green-700 text-inherit'
+    `relative transition-colors duration-300 font-medium px-2 py-1 ${isActive(path)
+      ? 'text-green-700 after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-green-700'
+      : 'hover:text-green-700 text-inherit'
     }`;
 
 
   return (
     <>
-      <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white text-black shadow-md' : 'bg-black/20 text-white'}`}>
+      <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white text-black shadow-md' : 'bg-black/10 text-white'}`}>
         <div className="max-w-7xl mx-auto px-4 py-2 flex items-center justify-between">
           {/* Logo */}
           <div></div>
-          {/* <Link href="/" className="text-2xl font-bold">
-            {scrolled ? (
-              <img src="/assets/images/logo-black.png" alt="logo" className="w-40 h-10" />
+          <Link href="/" className="text-2xl font-bold">
+            <img src="/assets/images/logo.png" alt="logo" className="h-12" />
+            {/* {scrolled ? (
+              <img src="/assets/images/logo-white.png" alt="logo" className="h-15" />
             ) : (
-              <img src="/assets/images/logo-white.png" alt="logo" className="w-40 h-10" />
-            )}
-          </Link> */}
+              <img src="/assets/images/logo-white.png" alt="logo" className="h-15" />
+            )} */}
+          </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex gap-6 items-center text-sm">
@@ -62,11 +62,10 @@ export default function Navbar() {
           {/* Join Button - Styled like “Donate” */}
           <a
             href="/donate"
-            className={`ml-4 px-5 py-2 rounded text-sm font-semibold transition-all duration-300 ${
-              scrolled
-                ? 'bg-green-700 text-white hover:bg-green-800'
-                : 'bg-white text-black hover:bg-green-700 hover:text-white'
-            }`}
+            className={`ml-4 px-5 py-2 rounded text-sm font-semibold transition-all duration-300  hidden sm:inline-block ${scrolled
+              ? 'bg-green-700 text-white hover:bg-green-800'
+              : 'bg-white text-black hover:bg-green-700 hover:text-white'
+              }`}
           >
             Donate
           </a>
