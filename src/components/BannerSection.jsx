@@ -51,7 +51,7 @@ export default function BannerSection() {
     >
       {banners.map((banner, idx) => (
         <SwiperSlide key={idx}>
-          <div className="relative w-full h-[230px] sm:h-[400px] md:h-[450px] lg:h-[550px]">
+          <div className="relative w-full h-[210px] sm:h-[380px] md:h-[430px] lg:h-[530px]">
             <img
               src={banner.src}
               alt={banner.title}

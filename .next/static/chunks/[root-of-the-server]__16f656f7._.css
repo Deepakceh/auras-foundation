@@ -805,6 +805,14 @@
     height: 200px;
   }
 
+  .h-\[210px\] {
+    height: 210px;
+  }
+
+  .h-\[220px\] {
+    height: 220px;
+  }
+
   .h-\[230px\] {
     height: 230px;
   }
@@ -1604,6 +1612,14 @@
     padding-top: calc(var(--spacing) * 12);
   }
 
+  .pt-14 {
+    padding-top: calc(var(--spacing) * 14);
+  }
+
+  .pt-16 {
+    padding-top: calc(var(--spacing) * 16);
+  }
+
   .pb-1 {
     padding-bottom: calc(var(--spacing) * 1);
   }
@@ -1626,6 +1642,10 @@
 
   .pb-24 {
     padding-bottom: calc(var(--spacing) * 24);
+  }
+
+  .pl-7 {
+    padding-left: calc(var(--spacing) * 7);
   }
 
   .pl-10 {
@@ -2371,18 +2391,6 @@
   }
 
   @media (hover: hover) {
-    .hover\:text-gray-50:hover {
-      color: var(--color-gray-50);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:text-gray-500:hover {
-      color: var(--color-gray-500);
-    }
-  }
-
-  @media (hover: hover) {
     .hover\:text-green-50:hover {
       color: var(--color-green-50);
     }
@@ -2397,12 +2405,6 @@
   @media (hover: hover) {
     .hover\:text-green-700:hover {
       color: var(--color-green-700);
-    }
-  }
-
-  @media (hover: hover) {
-    .hover\:text-green-800:hover {
-      color: var(--color-green-800);
     }
   }
 
@@ -2617,6 +2619,18 @@
   }
 
   @media (width >= 40rem) {
+    .sm\:h-\[380px\] {
+      height: 380px;
+    }
+  }
+
+  @media (width >= 40rem) {
+    .sm\:h-\[390px\] {
+      height: 390px;
+    }
+  }
+
+  @media (width >= 40rem) {
     .sm\:h-\[400px\] {
       height: 400px;
     }
@@ -2706,6 +2720,18 @@
   @media (width >= 48rem) {
     .md\:h-\[300px\] {
       height: 300px;
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:h-\[430px\] {
+      height: 430px;
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:h-\[440px\] {
+      height: 440px;
     }
   }
 
@@ -2814,6 +2840,18 @@
   @media (width >= 64rem) {
     .lg\:h-\[320px\] {
       height: 320px;
+    }
+  }
+
+  @media (width >= 64rem) {
+    .lg\:h-\[530px\] {
+      height: 530px;
+    }
+  }
+
+  @media (width >= 64rem) {
+    .lg\:h-\[540px\] {
+      height: 540px;
     }
   }
 
