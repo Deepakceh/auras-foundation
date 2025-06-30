@@ -40,7 +40,7 @@ export default function Navbar() {
       <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white text-black shadow-md`}>
         <div className="max-w-7xl mx-auto px-2 py-1 flex items-center justify-between">
           {/* Logo */}
-          <Link href="/" className="text-2xl font-bold pl-7">
+          <Link href="/" className="text-2xl font-bold sm:pl-2 md:pl-5">
             <img src="/assets/images/logo.png" alt="logo" className="h-12" />
             {/* {scrolled ? (
               <img src="/assets/images/logo-white.png" alt="logo" className="h-15" />

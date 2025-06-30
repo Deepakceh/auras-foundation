@@ -2673,6 +2673,12 @@
   }
 
   @media (width >= 40rem) {
+    .sm\:pl-2 {
+      padding-left: calc(var(--spacing) * 2);
+    }
+  }
+
+  @media (width >= 40rem) {
     .sm\:text-left {
       text-align: left;
     }
@@ -2792,6 +2798,18 @@
   @media (width >= 48rem) {
     .md\:px-24 {
       padding-inline: calc(var(--spacing) * 24);
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:pl-5 {
+      padding-left: calc(var(--spacing) * 5);
+    }
+  }
+
+  @media (width >= 48rem) {
+    .md\:pl-7 {
+      padding-left: calc(var(--spacing) * 7);
     }
   }
 
