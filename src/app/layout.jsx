@@ -56,7 +56,7 @@ export default function RootLayout({ children }) {
       <body className="bg-white text-black antialiased">
         <Loader>
           <Navbar />
-          <main>{children}</main>
+          <main className="pt-14">{children}</main>
           <Link
             href='/donate'
             rel="noopener noreferrer"
